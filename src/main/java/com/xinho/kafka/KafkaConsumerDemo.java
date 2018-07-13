@@ -21,7 +21,7 @@ public class KafkaConsumerDemo extends Thread {
 
     public KafkaConsumerDemo(String topic) {
         Properties properties = new Properties();
-        properties.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "");
+        properties.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "47.96.119.178:9092,47.96.119.178:9093,47.96.119.178:9094");
         properties.put(ConsumerConfig.GROUP_ID_CONFIG, "KafkaConsumerDemo");
         properties.put(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG, "false");
         properties.put(ConsumerConfig.AUTO_COMMIT_INTERVAL_MS_CONFIG, "1000");
