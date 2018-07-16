@@ -48,5 +48,8 @@ public class KafkaConsumerDemo extends Thread {
 
         public static void main(String[] args) {
             new KafkaConsumerDemo("test").start();
+            //第一步，找到当前的consumer group的offset维护在哪个分区中
+//        System.out.println(("KafkaConsumerDemo2".hashCode())%50);
+
         }
 }
